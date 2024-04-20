@@ -174,3 +174,28 @@ def insert_region(connection, reg, ncc):
     finally:
         if cursor:
             cursor.close()
+
+
+def explain_get_departments_in_region(connection, region_id):
+    """
+    La requête pour obtenir les départements dans une région avec EXPLAIN
+    """
+    print("\n- Execution de la requete: "+"EXPLAIN SELECT dep, ncc FROM Departement WHERE id_reg = "+str(region_id))
+
+    cursor = connection.cursor()
+    cursor.execute("\nEXPLAIN SELECT dep, ncc FROM Departement WHERE id_reg = %s", (region_id,))
+    explanation = cursor.fetchall()
+    cursor.close()
+    return explanation
+
+
+def explain_get_communes_with_population_greater_than(connection, department_id, greater_than, code_stats_libelle="P20_POP"):
+    """
+    La requête pour obtenir les communes avec une population supérieure à X dans un département donné avec EXPLAIN
+    """
+    print("\n- Execution de la requete: "+"EXPLAIN SELECT DISTINCT(comm.com), comm.ncc FROM Commune comm, StatsPopulation sp WHERE sp.code_stats_libelle = "+code_stats_libelle+" AND sp.id_com = comm.com AND comm.id_dep = "+department_id+" AND sp.valeur > "+greater_than)
+    cursor = connection.cursor()
+    cursor.execute("EXPLAIN SELECT DISTINCT(comm.com), comm.ncc FROM Commune comm, StatsPopulation sp WHERE sp.code_stats_libelle = %s AND sp.id_com = comm.com AND comm.id_dep = %s AND sp.valeur > %s", (code_stats_libelle, department_id, greater_than))
+    explanation = cursor.fetchall()
+    cursor.close()
+    return explanation
