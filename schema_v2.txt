@@ -1,0 +1,23 @@
+Après concertation entre nous et avec la chargée de TD.
+
+Region (reg, ncc); avec REG en clé.
+Departement (dep, ncc, id_reg); avec Dep en clé.
+Commune (com, ncc, id_dep) ; avec com en clé.
+ChefLieuDep (id_dep, id_com) ; avec id_dep en clé.
+ChefLieuReg (id_reg, id_com); avec id_reg en clé.
+
+Cette nouvelle implémentation empêche un département/région d'avoir plusieurs chefs-lieux en utilisant directement l'identifiant du département/région comme clé de table. 
+Nous avons également retiré certains identifiants de table que nous avons jugés inutiles.
+
+StatsLibelle (code, libelle); avec code en clé.
+StatsPopulation (valeur, id_com, annee, code_stats_libelle); avec (id_com, code_stats_libelle)
+
+
+L'implémentation précédente ne prenait en compte que le nombre de la population. Cette nouvelle implémentation prend en compte toutes les statistiques et est plus modulable pour d'éventuels ajouts futurs.
+
+DatasStatsMariage (id_dep, value, annee, code_categorie, id_statistique_mariage); avec (id_statistique_mariage, id_dep, annee, code_categorie) en clé.
+
+StatistiqueMariage (id, titre); avec id en clé.
+
+
+L'implémentation précédente était fonctionnelle, mais elle était trop basée sur les fichiers. Nous avions des tables spécifiques pour le fichier DEP1, d'autres pour le fichier DEP2, etc. Elle était modulable mais pas assez ; l'ajout de nouveaux types de statistiques aurait probablement conduit à la création de nouvelles tables ou à l'ajout de trop d'attributs. Cette version est beaucoup plus modulaire que la précédente.

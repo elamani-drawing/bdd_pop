@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    container_name: bddproject_db_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root  
+      POSTGRES_DB: bddproject_db
+    networks:
+      - dev
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: bddproject_pgdmin4
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: root@root.com
+      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_LISTEN_PORT: 8080
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    networks:
+      - dev
+
+networks:
+  dev:
+
+volumes:
+  db-data:
+  pgadmin-data:

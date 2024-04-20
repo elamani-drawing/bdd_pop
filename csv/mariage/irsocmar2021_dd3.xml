@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<base-de-donnees afficher-sommaire="true" afficher-sommaire-documentation="false">
+    <titre>Les mariages en 2021 - Tableaux régionaux et départementaux</titre>
+    <sous-titre>État civil - Insee Résultats</sous-titre>
+    <chapo/>
+    <blocs>
+        <bloc>
+            <intertitre niveau="1">Téléchargement de l'ensemble des tableaux de cette section</intertitre>
+        </bloc>
+        <bloc>
+            <avertissement>
+                <bloc>
+                    <paragraphes>
+                        <paragraphe>Les fichiers csv sont encodés en UTF-8, correspondant aux standards d’interopérabilité. Pour ouvrir correctement le fichier de métadonnées avec le logiciel Microsoft Excel, il est nécessaire d’utiliser la fonctionnalité d’import de données externes accessible depuis le menu Données. </paragraphe>
+                    </paragraphes>
+                </bloc>
+            </avertissement>
+        </bloc>
+        <bloc>
+            <fichiers-donnees>
+                <nom/>
+                <titre>Ensemble des tableaux au format xlsx – Métadonnées au format csv – Ensemble des tableaux au format csv</titre>
+                <fichiers>
+                    <fichier>
+                        <uri>irsocmar2021_dep_xlsx.zip</uri>
+                        <taille>172 Ko</taille>
+                        <format>xlsx</format>
+                    </fichier>
+					<fichier>
+                        <uri>metadonnees_irsocmar2021_annuels.csv</uri>
+                        <taille>29 Ko</taille>
+                        <format>csv</format>
+                    </fichier>
+					<fichier>
+                        <uri>irsocmar2021_dep_csv.zip</uri>
+                        <taille>172 Ko</taille>
+                        <format>csv</format>
+                    </fichier>
+                    
+                </fichiers>
+            </fichiers-donnees>
+        </bloc>
+        <bloc>
+            <intertitre niveau="1">Téléchargement des tableaux à l'unité</intertitre>
+        </bloc>
+        <bloc>
+            <fichiers-donnees>
+                <nom>DEP1</nom>
+                <titre>Groupe d'âges des époux selon le département et la région de mariage. Année 2021</titre>
+                <fichiers>
+                    <fichier>
+                        <uri>dep1.xlsx</uri>
+                        <taille>43 Ko</taille>
+                        <format>xlsx</format>
+                    </fichier>
+					<fichier>
+                        <uri>Dep1.csv</uri>
+                        <taille>43 Ko</taille>
+                        <format>csv</format>
+                    </fichier>
+                </fichiers>
+            </fichiers-donnees>
+        </bloc>
+        <bloc>
+            <fichiers-donnees>
+                <nom>DEP2</nom>
+                <titre>État matrimonial antérieur des époux selon le département et la région de mariage. Année 2021</titre>
+                <fichiers>
+                    <fichier>
+                        <uri>dep2.xlsx</uri>
+                        <taille>24 Ko</taille>
+                        <format>xlsx</format>
+                    </fichier>
+					<fichier>
+                        <uri>Dep2.csv</uri>
+                        <taille>43 Ko</taille>
+                        <format>csv</format>
+                    </fichier>
+                </fichiers>
+            </fichiers-donnees>
+        </bloc>
+        <bloc>
+            <fichiers-donnees>
+                <nom>DEP3</nom>
+                <titre>Groupe d'âges des époux se mariant pour la première fois selon le département et la région de mariage. Année 2021</titre>
+                <fichiers>
+                    <fichier>
+                        <uri>dep3.xlsx</uri>
+                        <taille>43 Ko</taille>
+                        <format>xlsx</format>
+                    </fichier>
+					<fichier>
+                        <uri>Dep3.csv</uri>
+                        <taille>43 Ko</taille>
+                        <format>csv</format>
+                    </fichier>
+                </fichiers>
+            </fichiers-donnees>
+        </bloc>
+        <bloc>
+            <fichiers-donnees>
+                <nom>DEP4</nom>
+                <titre>Nationalité des époux selon le département et la région de domicile conjugal. Année 2021</titre>
+                <fichiers>
+                    <fichier>
+                        <uri>dep4.xlsx</uri>
+                        <taille>25 Ko</taille>
+                        <format>xlsx</format>
+                    </fichier>
+					<fichier>
+                        <uri>Dep4.csv</uri>
+                        <taille>43 Ko</taille>
+                        <format>csv</format>
+                    </fichier>
+                </fichiers>
+            </fichiers-donnees>
+        </bloc>
+        <bloc>
+            <fichiers-donnees>
+                <nom>DEP5</nom>
+                <titre>Pays de naissance des époux selon le département et la région de domicile conjugal. Année 2021</titre>
+                <fichiers>
+                    <fichier>
+                        <uri>dep5.xlsx</uri>
+                        <taille>25 Ko</taille>
+                        <format>xlsx</format>
+                    </fichier>
+					<fichier>
+                        <uri>Dep5.csv</uri>
+                        <taille>43 Ko</taille>
+                        <format>csv</format>
+                    </fichier>
+                </fichiers>
+            </fichiers-donnees>
+        </bloc>
+        <bloc>
+            <fichiers-donnees>
+                <nom>DEP6</nom>
+                <titre>Répartition mensuelle des mariages selon le département et la région de mariage. Année 2021</titre>
+                <fichiers>
+                    <fichier>
+                        <uri>dep6.xlsx</uri>
+                        <taille>38 Ko</taille>
+                        <format>xlsx</format>
+                    </fichier>
+					<fichier>
+                        <uri>Dep6.csv</uri>
+                        <taille>43 Ko</taille>
+                        <format>csv</format>
+                    </fichier>
+                </fichiers>
+            </fichiers-donnees>
+        </bloc>
+        <bloc>
+            <dictionnaire-variables>
+    <listes-variables>
+      <liste-variable>
+        <intertitre niveau="1">AGE : Âge atteint dans l'année</intertitre>
+        <liste deroulee="false">
+          <item>E : Ensemble</item>
+          <item>15 : 15 ans ou moins</item>
+          <item>16 : 16 ans</item>
+          <item>17 : 17 ans</item>
+          <item>18 : 18 ans</item>
+          <item>19 : 19 ans</item>
+          <item>20 : 20 ans</item>
+          <item>21 : 21 ans</item>
+          <item>22 : 22 ans</item>
+          <item>23 : 23 ans</item>
+          <item>24 : 24 ans</item>
+          <item>25 : 25 ans</item>
+          <item>26 : 26 ans</item>
+          <item>27 : 27 ans</item>
+          <item>28 : 28 ans</item>
+          <item>29 : 29 ans</item>
+          <item>30 : 30 ans</item>
+          <item>31 : 31 ans</item>
+          <item>32 : 32 ans</item>
+          <item>33 : 33 ans</item>
+          <item>34 : 34 ans</item>
+          <item>35 : 35 ans</item>
+          <item>36 : 36 ans</item>
+          <item>37 : 37 ans</item>
+          <item>38 : 38 ans</item>
+          <item>39 : 39 ans</item>
+          <item>40 : 40 ans</item>
+          <item>41 : 41 ans</item>
+          <item>42 : 42 ans</item>
+          <item>43 : 43 ans</item>
+          <item>44 : 44 ans</item>
+          <item>45 : 45 ans</item>
+          <item>46 : 46 ans</item>
+          <item>47 : 47 ans</item>
+          <item>48 : 48 ans</item>
+          <item>49 : 49 ans</item>
+          <item>50 : 50 ans</item>
+          <item>51 : 51 ans</item>
+          <item>52 : 52 ans</item>
+          <item>53 : 53 ans</item>
+          <item>54 : 54 ans</item>
+          <item>55 : 55 ans</item>
+          <item>56 : 56 ans</item>
+          <item>57 : 57 ans</item>
+          <item>58 : 58 ans</item>
+          <item>59 : 59 ans</item>
+          <item>60 : 60 ans</item>
+          <item>61 : 61 ans</item>
+          <item>62 : 62 ans</item>
+          <item>63 : 63 ans</item>
+          <item>64 : 64 ans</item>
+          <item>65 : 65 ans ou plus</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">AGECONJ1 : Âge atteint dans l'année du conjoint 1</intertitre>
+        <liste deroulee="false">
+          <item>15 : 15 ans ou moins</item>
+          <item>16 : 16 ans</item>
+          <item>17 : 17 ans</item>
+          <item>18 : 18 ans</item>
+          <item>19 : 19 ans</item>
+          <item>20 : 20 ans</item>
+          <item>21 : 21 ans</item>
+          <item>22 : 22 ans</item>
+          <item>23 : 23 ans</item>
+          <item>24 : 24 ans</item>
+          <item>25 : 25 ans</item>
+          <item>26 : 26 ans</item>
+          <item>27 : 27 ans</item>
+          <item>28 : 28 ans</item>
+          <item>29 : 29 ans</item>
+          <item>30 : 30 ans</item>
+          <item>31 : 31 ans</item>
+          <item>32 : 32 ans</item>
+          <item>33 : 33 ans</item>
+          <item>34 : 34 ans</item>
+          <item>35 : 35 ans</item>
+          <item>36 : 36 ans</item>
+          <item>37 : 37 ans</item>
+          <item>38 : 38 ans</item>
+          <item>39 : 39 ans</item>
+          <item>40 : 40 ans</item>
+          <item>41 : 41 ans</item>
+          <item>42 : 42 ans</item>
+          <item>43 : 43 ans</item>
+          <item>44 : 44 ans</item>
+          <item>45 : 45 ans</item>
+          <item>46 : 46 ans</item>
+          <item>47 : 47 ans</item>
+          <item>48 : 48 ans</item>
+          <item>49 : 49 ans</item>
+          <item>50 : 50 ans</item>
+          <item>51 : 51 ans</item>
+          <item>52 : 52 ans</item>
+          <item>53 : 53 ans</item>
+          <item>54 : 54 ans</item>
+          <item>55 : 55 ans</item>
+          <item>56 : 56 ans</item>
+          <item>57 : 57 ans</item>
+          <item>58 : 58 ans</item>
+          <item>59 : 59 ans</item>
+          <item>60 : 60 ans</item>
+          <item>61 : 61 ans</item>
+          <item>62 : 62 ans</item>
+          <item>63 : 63 ans</item>
+          <item>64 : 64 ans</item>
+          <item>65 : 65 ans ou plus</item>
+          <item>E : Ensemble</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">AGECONJ2 : Âge atteint dans l'année du conjoint 2</intertitre>
+        <liste deroulee="false">
+          <item>15 : 15 ans ou moins</item>
+          <item>16 : 16 ans</item>
+          <item>17 : 17 ans</item>
+          <item>18 : 18 ans</item>
+          <item>19 : 19 ans</item>
+          <item>20 : 20 ans</item>
+          <item>21 : 21 ans</item>
+          <item>22 : 22 ans</item>
+          <item>23 : 23 ans</item>
+          <item>24 : 24 ans</item>
+          <item>25 : 25 ans</item>
+          <item>26 : 26 ans</item>
+          <item>27 : 27 ans</item>
+          <item>28 : 28 ans</item>
+          <item>29 : 29 ans</item>
+          <item>30 : 30 ans</item>
+          <item>31 : 31 ans</item>
+          <item>32 : 32 ans</item>
+          <item>33 : 33 ans</item>
+          <item>34 : 34 ans</item>
+          <item>35 : 35 ans</item>
+          <item>36 : 36 ans</item>
+          <item>37 : 37 ans</item>
+          <item>38 : 38 ans</item>
+          <item>39 : 39 ans</item>
+          <item>40 : 40 ans</item>
+          <item>41 : 41 ans</item>
+          <item>42 : 42 ans</item>
+          <item>43 : 43 ans</item>
+          <item>44 : 44 ans</item>
+          <item>45 : 45 ans</item>
+          <item>46 : 46 ans</item>
+          <item>47 : 47 ans</item>
+          <item>48 : 48 ans</item>
+          <item>49 : 49 ans</item>
+          <item>50 : 50 ans</item>
+          <item>51 : 51 ans</item>
+          <item>52 : 52 ans</item>
+          <item>53 : 53 ans</item>
+          <item>54 : 54 ans</item>
+          <item>55 : 55 ans</item>
+          <item>56 : 56 ans</item>
+          <item>57 : 57 ans</item>
+          <item>58 : 58 ans</item>
+          <item>59 : 59 ans</item>
+          <item>60 : 60 ans</item>
+          <item>61 : 61 ans</item>
+          <item>62 : 62 ans</item>
+          <item>63 : 63 ans</item>
+          <item>64 : 64 ans</item>
+          <item>65 : 65 ans ou plus</item>
+          <item>E : Ensemble</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">CHAMP : Champ</intertitre>
+        <liste deroulee="false">
+          <item>FE : France inclus Mayotte</item>
+          <item>FM : France métropolitaine</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">DURVD : Durée écoulée depuis le veuvage ou divorce, en différence de millésime</intertitre>
+        <liste deroulee="false">
+          <item>E : Ensemble</item>
+          <item>0 : Moins d'un an</item>
+          <item>1 : 1 an</item>
+          <item>2 : 2 ans</item>
+          <item>3 : 3 ans</item>
+          <item>4 : 4 ans</item>
+          <item>5 : 5 ans</item>
+          <item>6 : 6 ans</item>
+          <item>7 : 7 ans</item>
+          <item>8 : 8 ans</item>
+          <item>9 : 9 ans</item>
+          <item>10 : 10 ans</item>
+          <item>11 : 11 ans</item>
+          <item>12 : 12 ans</item>
+          <item>13 : 13 ans</item>
+          <item>14 : 14 ans</item>
+          <item>15 : 15 ans</item>
+          <item>16 : 16 ans</item>
+          <item>17 : 17 ans</item>
+          <item>18 : 18 ans</item>
+          <item>19 : 19 ans</item>
+          <item>20 : 20 ans ou plus</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">ETAMAT : État matrimonial antérieur au mariage</intertitre>
+        <liste deroulee="false">
+          <item>E : Ensemble</item>
+          <item>1 : Célibataires</item>
+          <item>3 : Veufs / Veuves</item>
+          <item>4 : Divorcés / Divorcées</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">ETAMATR : État matrimonial antérieur au remariage</intertitre>
+        <liste deroulee="false">
+          <item>3 : Veufs / Veuves</item>
+          <item>4 : Divorcés / Divorcées</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">GRAGE : Groupe d'âges atteints dans l'année</intertitre>
+        <liste deroulee="false">
+          <item>TOTAL : Ensemble</item>
+          <item>14_19 : Moins de 20 ans</item>
+          <item>20_24 : De 20 à 24 ans</item>
+          <item>25_29 : De 25 à 29 ans</item>
+          <item>30_34 : De 30 à 34 ans</item>
+          <item>35_39 : De 35 à 39 ans</item>
+          <item>40_49 : De 40 à 49 ans</item>
+          <item>50_59 : De 50 à 59 ans</item>
+          <item>60_PL : 60 ans ou plus</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">INDIC1 : Indicateur</intertitre>
+        <liste deroulee="false">
+          <item>NBMAR : Nombre de mariages</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">INDIC2 : Indicateur</intertitre>
+        <liste deroulee="false">
+          <item>NBMARIES : Nombre de marié(e)s</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">LNEPOUX : Pays de naissance combiné des époux(ses)</intertitre>
+        <liste deroulee="false">
+          <item>TOTAL : Ensemble</item>
+          <item>FR_FR : Les deux époux(se) né(e)s en France</item>
+          <item>FR_ETR : Couples mixtes</item>
+          <item>ETR_ETR : Les deux époux(ses) né(e)s à l'étranger</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">MMAR : Mois du mariage</intertitre>
+        <liste deroulee="false">
+          <item>AN : Année</item>
+          <item>01 : Janvier</item>
+          <item>02 : Février</item>
+          <item>03 : Mars</item>
+          <item>04 : Avril</item>
+          <item>05 : Mai</item>
+          <item>06 : Juin</item>
+          <item>07 : Juillet</item>
+          <item>08 : Août</item>
+          <item>09 : Septembre</item>
+          <item>10 : Octobre</item>
+          <item>11 : Novembre</item>
+          <item>12 : Décembre</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">NATEPOUX : Nationalité combinée des époux(ses)</intertitre>
+        <liste deroulee="false">
+          <item>TOTAL : Ensemble</item>
+          <item>FR_FR : Les deux époux(ses) français(es)</item>
+          <item>FR_ETR : Couples mixtes</item>
+          <item>ETR_ETR : Les deux époux(ses) étrangers(ères)</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">REGDEP_DOMI : Région et département de domicile des époux</intertitre>
+        <liste deroulee="false">
+          <item>1175 : Paris</item>
+          <item>1177 : Seine-et-Marne</item>
+          <item>1178 : Yvelines</item>
+          <item>1191 : Essonne</item>
+          <item>1192 : Hauts-de-Seine</item>
+          <item>1193 : Seine-Saint-Denis</item>
+          <item>1194 : Val-de-Marne</item>
+          <item>1195 : Val-d'Oise</item>
+          <item>11XX : Île-de-France</item>
+          <item>2418 : Cher</item>
+          <item>2428 : Eure-et-Loir</item>
+          <item>2436 : Indre</item>
+          <item>2437 : Indre-et-Loire</item>
+          <item>2441 : Loir-et-Cher</item>
+          <item>2445 : Loiret</item>
+          <item>24XX : Centre-Val de Loire</item>
+          <item>2721 : Côte-d'Or</item>
+          <item>2758 : Nièvre</item>
+          <item>2771 : Saône-et-Loire</item>
+          <item>2789 : Yonne</item>
+          <item>2725 : Doubs</item>
+          <item>2739 : Jura</item>
+          <item>2770 : Haute-Saône</item>
+          <item>2790 : Territoire de Belfort</item>
+          <item>27XX : Bourgogne-Franche-Comté</item>
+          <item>2827 : Eure</item>
+          <item>2876 : Seine-Maritime</item>
+          <item>2814 : Calvados</item>
+          <item>2850 : Manche</item>
+          <item>2861 : Orne</item>
+          <item>28XX : Normandie</item>
+          <item>3259 : Nord</item>
+          <item>3262 : Pas-de-Calais</item>
+          <item>3202 : Aisne</item>
+          <item>3260 : Oise</item>
+          <item>3280 : Somme</item>
+          <item>32XX : Hauts-de-France</item>
+          <item>4454 : Meurthe-et-Moselle</item>
+          <item>4455 : Meuse</item>
+          <item>4457 : Moselle</item>
+          <item>4488 : Vosges</item>
+          <item>4467 : Bas-Rhin</item>
+          <item>4468 : Haut-Rhin</item>
+          <item>4408 : Ardennes</item>
+          <item>4410 : Aube</item>
+          <item>4451 : Marne</item>
+          <item>4452 : Haute-Marne</item>
+          <item>44XX : Grand Est</item>
+          <item>5244 : Loire-Atlantique</item>
+          <item>5249 : Maine-et-Loire</item>
+          <item>5253 : Mayenne</item>
+          <item>5272 : Sarthe</item>
+          <item>5285 : Vendée</item>
+          <item>52XX : Pays de la Loire</item>
+          <item>5322 : Côtes-d'Armor</item>
+          <item>5329 : Finistère</item>
+          <item>5335 : Ille-et-Vilaine</item>
+          <item>5356 : Morbihan</item>
+          <item>53XX : Bretagne</item>
+          <item>7524 : Dordogne</item>
+          <item>7533 : Gironde</item>
+          <item>7540 : Landes</item>
+          <item>7547 : Lot-et-Garonne</item>
+          <item>7564 : Pyrénées-Atlantiques</item>
+          <item>7516 : Charente</item>
+          <item>7517 : Charente-Maritime</item>
+          <item>7579 : Deux-Sèvres</item>
+          <item>7586 : Vienne</item>
+          <item>7519 : Corrèze</item>
+          <item>7523 : Creuse</item>
+          <item>7587 : Haute-Vienne</item>
+          <item>75XX : Nouvelle-Aquitaine</item>
+          <item>7609 : Ariège</item>
+          <item>7612 : Aveyron</item>
+          <item>7631 : Haute-Garonne</item>
+          <item>7632 : Gers</item>
+          <item>7646 : Lot</item>
+          <item>7665 : Hautes-Pyrénées</item>
+          <item>7681 : Tarn</item>
+          <item>7682 : Tarn-et-Garonne</item>
+          <item>7611 : Aude</item>
+          <item>7630 : Gard</item>
+          <item>7634 : Hérault</item>
+          <item>7648 : Lozère</item>
+          <item>7666 : Pyrénées-Orientales</item>
+          <item>76XX : Occitanie</item>
+          <item>8401 : Ain</item>
+          <item>8407 : Ardèche</item>
+          <item>8426 : Drôme</item>
+          <item>8438 : Isère</item>
+          <item>8442 : Loire</item>
+          <item>8469 : Rhône</item>
+          <item>8473 : Savoie</item>
+          <item>8474 : Haute-Savoie</item>
+          <item>8403 : Allier</item>
+          <item>8415 : Cantal</item>
+          <item>8443 : Haute-Loire</item>
+          <item>8463 : Puy-de-Dôme</item>
+          <item>84XX : Auvergne-Rhône-Alpes</item>
+          <item>9304 : Alpes-de-Haute-Provence</item>
+          <item>9305 : Hautes-Alpes</item>
+          <item>9306 : Alpes-Maritimes</item>
+          <item>9313 : Bouches-du-Rhône</item>
+          <item>9383 : Var</item>
+          <item>9384 : Vaucluse</item>
+          <item>93XX : Provence-Alpes-Côte d'Azur</item>
+          <item>942A : Corse-du-Sud</item>
+          <item>942B : Haute-Corse</item>
+          <item>94XX : Corse</item>
+          <item>FM : France métropolitaine</item>
+          <item>971 : Guadeloupe</item>
+          <item>972 : Martinique</item>
+          <item>973 : Guyane</item>
+          <item>974 : La Réunion</item>
+          <item>976 : Mayotte</item>
+          <item>97XX : Départements et régions d'outre-mer</item>
+          <item>FE : France</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">REGDEP_MAR : Région et département de mariage</intertitre>
+        <liste deroulee="false">
+          <item>1175 : Paris</item>
+          <item>1177 : Seine-et-Marne</item>
+          <item>1178 : Yvelines</item>
+          <item>1191 : Essonne</item>
+          <item>1192 : Hauts-de-Seine</item>
+          <item>1193 : Seine-Saint-Denis</item>
+          <item>1194 : Val-de-Marne</item>
+          <item>1195 : Val-d'Oise</item>
+          <item>11XX : Île-de-France</item>
+          <item>2418 : Cher</item>
+          <item>2428 : Eure-et-Loir</item>
+          <item>2436 : Indre</item>
+          <item>2437 : Indre-et-Loire</item>
+          <item>2441 : Loir-et-Cher</item>
+          <item>2445 : Loiret</item>
+          <item>24XX : Centre-Val de Loire</item>
+          <item>2721 : Côte-d'Or</item>
+          <item>2758 : Nièvre</item>
+          <item>2771 : Saône-et-Loire</item>
+          <item>2789 : Yonne</item>
+          <item>2725 : Doubs</item>
+          <item>2739 : Jura</item>
+          <item>2770 : Haute-Saône</item>
+          <item>2790 : Territoire de Belfort</item>
+          <item>27XX : Bourgogne-Franche-Comté</item>
+          <item>2827 : Eure</item>
+          <item>2876 : Seine-Maritime</item>
+          <item>2814 : Calvados</item>
+          <item>2850 : Manche</item>
+          <item>2861 : Orne</item>
+          <item>28XX : Normandie</item>
+          <item>3259 : Nord</item>
+          <item>3262 : Pas-de-Calais</item>
+          <item>3202 : Aisne</item>
+          <item>3260 : Oise</item>
+          <item>3280 : Somme</item>
+          <item>32XX : Hauts-de-France</item>
+          <item>4454 : Meurthe-et-Moselle</item>
+          <item>4455 : Meuse</item>
+          <item>4457 : Moselle</item>
+          <item>4488 : Vosges</item>
+          <item>4467 : Bas-Rhin</item>
+          <item>4468 : Haut-Rhin</item>
+          <item>4408 : Ardennes</item>
+          <item>4410 : Aube</item>
+          <item>4451 : Marne</item>
+          <item>4452 : Haute-Marne</item>
+          <item>44XX : Grand Est</item>
+          <item>5244 : Loire-Atlantique</item>
+          <item>5249 : Maine-et-Loire</item>
+          <item>5253 : Mayenne</item>
+          <item>5272 : Sarthe</item>
+          <item>5285 : Vendée</item>
+          <item>52XX : Pays de la Loire</item>
+          <item>5322 : Côtes-d'Armor</item>
+          <item>5329 : Finistère</item>
+          <item>5335 : Ille-et-Vilaine</item>
+          <item>5356 : Morbihan</item>
+          <item>53XX : Bretagne</item>
+          <item>7524 : Dordogne</item>
+          <item>7533 : Gironde</item>
+          <item>7540 : Landes</item>
+          <item>7547 : Lot-et-Garonne</item>
+          <item>7564 : Pyrénées-Atlantiques</item>
+          <item>7516 : Charente</item>
+          <item>7517 : Charente-Maritime</item>
+          <item>7579 : Deux-Sèvres</item>
+          <item>7586 : Vienne</item>
+          <item>7519 : Corrèze</item>
+          <item>7523 : Creuse</item>
+          <item>7587 : Haute-Vienne</item>
+          <item>75XX : Nouvelle-Aquitaine</item>
+          <item>7609 : Ariège</item>
+          <item>7612 : Aveyron</item>
+          <item>7631 : Haute-Garonne</item>
+          <item>7632 : Gers</item>
+          <item>7646 : Lot</item>
+          <item>7665 : Hautes-Pyrénées</item>
+          <item>7681 : Tarn</item>
+          <item>7682 : Tarn-et-Garonne</item>
+          <item>7611 : Aude</item>
+          <item>7630 : Gard</item>
+          <item>7634 : Hérault</item>
+          <item>7648 : Lozère</item>
+          <item>7666 : Pyrénées-Orientales</item>
+          <item>76XX : Occitanie</item>
+          <item>8401 : Ain</item>
+          <item>8407 : Ardèche</item>
+          <item>8426 : Drôme</item>
+          <item>8438 : Isère</item>
+          <item>8442 : Loire</item>
+          <item>8469 : Rhône</item>
+          <item>8473 : Savoie</item>
+          <item>8474 : Haute-Savoie</item>
+          <item>8403 : Allier</item>
+          <item>8415 : Cantal</item>
+          <item>8443 : Haute-Loire</item>
+          <item>8463 : Puy-de-Dôme</item>
+          <item>84XX : Auvergne-Rhône-Alpes</item>
+          <item>9304 : Alpes-de-Haute-Provence</item>
+          <item>9305 : Hautes-Alpes</item>
+          <item>9306 : Alpes-Maritimes</item>
+          <item>9313 : Bouches-du-Rhône</item>
+          <item>9383 : Var</item>
+          <item>9384 : Vaucluse</item>
+          <item>93XX : Provence-Alpes-Côte d'Azur</item>
+          <item>942A : Corse-du-Sud</item>
+          <item>942B : Haute-Corse</item>
+          <item>94XX : Corse</item>
+          <item>FM : France métropolitaine</item>
+          <item>971 : Guadeloupe</item>
+          <item>972 : Martinique</item>
+          <item>973 : Guyane</item>
+          <item>974 : La Réunion</item>
+          <item>976 : Mayotte</item>
+          <item>97XX : Départements et régions d'outre-mer</item>
+          <item>FE : France</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">SEXE : Sexe du conjoint</intertitre>
+        <liste deroulee="false">
+          <item>H : Hommes</item>
+          <item>F : Femmes</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">TUMAR : Tranche d'unité urbaine d'enregistrement du mariage</intertitre>
+        <liste deroulee="false">
+          <item>0 : Communes rurales</item>
+          <item>1 : Moins de 5 000 habitants</item>
+          <item>2 : 5 000 à 9 999 habitants</item>
+          <item>3 : 10 000 à 19 999 habitants</item>
+          <item>4 : 20 000 à 49 999 habitants</item>
+          <item>5 : 50 000 à 99 999 habitants</item>
+          <item>6 : 100 000 à 199 999 habitants</item>
+          <item>7 : 200 000 habitants ou plus</item>
+          <item>8 : Agglomération de Paris</item>
+          <item>E : Ensemble</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">TYPMAR : </intertitre>
+        <liste deroulee="false">
+          <item>HF : Mariages entre personnes de sexe différent</item>
+          <item>HH-FF : Mariages entre personnes de même sexe</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">TYPMAR2 : </intertitre>
+        <liste deroulee="false">
+          <item>HF : Mariages entre personnes de sexe différent</item>
+          <item>HH : Mariages entre hommes</item>
+          <item>FF : Mariages entre femmes</item>
+        </liste>
+      </liste-variable>
+      <liste-variable>
+        <intertitre niveau="1">TYPMAR3 : </intertitre>
+        <liste deroulee="false">
+          <item>HF-H : Mariages entre personnes de sexe différent - Hommes</item>
+          <item>HF-F : Mariages entre personnes de sexe différent - Femmes</item>
+          <item>HH : Mariages entre hommes</item>
+          <item>FF : Mariages entre femmes</item>
+        </liste>
+      </liste-variable>
+    </listes-variables>
+  </dictionnaire-variables>
+</bloc>
+    </blocs>
+</base-de-donnees>
