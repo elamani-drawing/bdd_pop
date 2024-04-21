@@ -16,13 +16,13 @@ def print_get_pop_dep_after_alter(connection):
     departements = get_population_departments_after_alter(connection)
     print("\nPopulation des départements:")
     for row in departements:
-        print(f"- Département {row[0]} ({row[1]}) avec une population de {row[2]} habitants")
+        print(f"- Département {row[0]} ({row[1]}) avec une population de {int(row[2]) if row[2] else row[2]} habitants")
 
 def print_get_pop_reg_after_alter(connection):
     regions = get_population_regions_after_alter(connection) 
     print("\nPopulation des régions:")
     for row in regions:
-        print(f"- Région {row[0]} ({row[1]}) avec une population de {row[2]} habitants")
+        print(f"- Région {row[0]} ({row[1]}) avec une population de {int(row[2]) if row[2] else row[2]} habitants")
         
 # Vous pouvez commenter cette ligne apres qu'elle est etait executé au moin une fois 
 restore_data(connection, params) 

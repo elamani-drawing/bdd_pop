@@ -22,19 +22,19 @@ def print_com_greather_than(connection, dep_id, than):
 
 def print_most_populated_com(connection, id_dep):
     commune = get_most_populated_commune(connection.cursor(), id_dep)
-    print("\n- La commune la plus peuplé du département {} est: {} avec la {} habitants".format(id_dep, commune[1], commune[2]))
+    print("\n- La commune la plus peuplé du département {} est: {} avec la {} habitants".format(id_dep, commune[1],  int(commune[2]) if commune[2] else commune[2]))
 
 def print_least_populated_com(connection, id_dep):
     commune = get_least_populated_commune(connection.cursor(), id_dep)
-    print("\n- La commune la moin peuplé du département {} est la {} avec {} habitants".format(id_dep, commune[1], commune[2]))
+    print("\n- La commune la moin peuplé du département {} est la {} avec {} habitants".format(id_dep, commune[1], int(commune[2]) if commune[2] else commune[2]))
 
 def print_most_populated_region(connection):
     region = get_most_populated_region(connection.cursor())
-    print("\n- La région la plus peuplé est la {} avec {} habitants".format(region[1], region[2]))
+    print("\n- La région la plus peuplé est la {} avec {} habitants".format(region[1], int(region[2]) if region[2] else region[2]))
     
 def print_least_populated_region(connection):
     region = get_least_populated_region(connection.cursor())
-    print("\n- La région la moin peuplé est la {} avec {} habitants".format(region[1], region[2]))
+    print("\n- La région la moin peuplé est la {} avec {} habitants".format(region[1], int(region[2]) if region[2] else region[2]))
 
 # Vous pouvez commenter cette ligne apres qu'elle est etait executé au moin une fois 
 restore_data(connection, params) 

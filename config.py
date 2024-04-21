@@ -55,60 +55,60 @@ params = {
 
 # Les types sont principalement utilisées pour le formmatage lors de l'affichage
 
-TYPE_MAR_LABEL= {
-    "HF": "Mariages entre personnes de sexe différent",
-    "HH-FF": "Mariages entre personnes de même sexe",
-    "HH": "Mariages entre hommes",
-    "FF": "Mariages entre femmes",
-    "HF-H": "Mariages entre personnes de sexe différent - Hommes",
-    "HF-F": "Mariages entre personnes de sexe différent - Femmes",
-}
+# TYPE_MAR_LABEL= {
+#     "HF": "Mariages entre personnes de sexe différent",
+#     "HH-FF": "Mariages entre personnes de même sexe",
+#     "HH": "Mariages entre hommes",
+#     "FF": "Mariages entre femmes",
+#     "HF-H": "Mariages entre personnes de sexe différent - Hommes",
+#     "HF-F": "Mariages entre personnes de sexe différent - Femmes",
+# }
 
-TYPE_ETAT_MAT_LABEL = {
-    'E': 'Ensemble',
-    '1': 'Célibataires',
-    '3': 'Veufs / Veuves',
-    '4': 'Divorcés / Divorcées',
-}
+# TYPE_ETAT_MAT_LABEL = {
+#     'E': 'Ensemble',
+#     '1': 'Célibataires',
+#     '3': 'Veufs / Veuves',
+#     '4': 'Divorcés / Divorcées',
+# }
 
-TYPE_SEXE = {
-    "H": "Hommes",
-    "F": "Femmes" ,
-}
+# TYPE_SEXE = {
+#     "H": "Hommes",
+#     "F": "Femmes" ,
+# }
 
-TYPE_DE_CATEGORIE = {
-    "TYPMAR" : "Type de mariage",
-    "SEXE": "Sexe",
-    "ETAMAT" : "État matrimonial",
-}
+# TYPE_DE_CATEGORIE = {
+#     "TYPMAR" : "Type de mariage",
+#     "SEXE": "Sexe",
+#     "ETAMAT" : "État matrimonial",
+# }
 
-TYPE_NAT_EPOUX =  {
-    "TOTAL": "Ensemble",
-    "FR_FR": "Les deux époux(ses) français(es)",
-    "FR_ETR": "Couples mixtes",
-    "ETR_ETR": "Les deux époux(ses) étrangers(ères)"
-}
+# TYPE_NAT_EPOUX =  {
+#     "TOTAL": "Ensemble",
+#     "FR_FR": "Les deux époux(ses) français(es)",
+#     "FR_ETR": "Couples mixtes",
+#     "ETR_ETR": "Les deux époux(ses) étrangers(ères)"
+# }
 
-TYPE_MMAR = {
-    "AN": "Année",
-    "01": "Janvier",
-    "02": "Février",
-    "03": "Mars",
-    "04": "Avril",
-    "05": "Mai",
-    "06": "Juin",
-    "07": "Juillet",
-    "08": "Août",
-    "09": "Septembre",
-    "10": "Octobre",
-    "11": "Novembre",
-    "12": "Décembre"
-}
+# TYPE_MMAR = {
+#     "AN": "Année",
+#     "01": "Janvier",
+#     "02": "Février",
+#     "03": "Mars",
+#     "04": "Avril",
+#     "05": "Mai",
+#     "06": "Juin",
+#     "07": "Juillet",
+#     "08": "Août",
+#     "09": "Septembre",
+#     "10": "Octobre",
+#     "11": "Novembre",
+#     "12": "Décembre"
+# }
 
-CATEGORIE_STATS = {
-    "TYPMAR" : TYPE_MAR_LABEL, 
-    "ETATMAT" : TYPE_ETAT_MAT_LABEL,
-    "SEXE" : TYPE_SEXE,
-    "NATEPOUX" : TYPE_NAT_EPOUX,
-    "MMAR" : TYPE_MMAR,
-}
+# CATEGORIE_STATS = {
+#     "TYPMAR" : TYPE_MAR_LABEL, 
+#     "ETATMAT" : TYPE_ETAT_MAT_LABEL,
+#     "SEXE" : TYPE_SEXE,
+#     "NATEPOUX" : TYPE_NAT_EPOUX,
+#     "MMAR" : TYPE_MMAR,
+# }

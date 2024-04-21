@@ -45,6 +45,4 @@ print("""
     Unique (Unique) : Pour finirr, une opération d'élimination des doublons est effectuée pour ne renvoyer que des lignes uniques.
 """)
 
-
-
 connection.close()

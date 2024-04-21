@@ -15,13 +15,13 @@ def print_view_get_pop_dep(connection):
     departements = view_get_population_departments(connection)
     print("\nPopulation des départements par année:")
     for row in departements:
-        print(f"{row[2]} - Département {row[0]} ({row[1]}) : {row[3]} habitants")
+        print(f"{row[2]} - Département {row[0]} ({row[1]}) : {int(row[3]) if row[3] else row[3]} habitants")
 
 def print_view_get_pop_reg(connection):
     regions = view_get_population_regions(connection) 
     print("\nPopulation des régions par année:")
     for row in regions:
-        print(f"{row[2]} - Région {row[0]} ({row[1]}) : {row[3]} habitants")
+        print(f"{row[2]} - Région {row[0]} ({row[1]}) : {int(row[3]) if row[3] else row[3]} habitants")
         
 # Vous pouvez commenter cette ligne apres qu'elle est etait executé au moin une fois 
 restore_data(connection, params) 
