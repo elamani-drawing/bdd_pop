@@ -1,8 +1,9 @@
-from lib import initialise_db, login_bdd, insert_stats_population_fragment, insert_dep_file_fragment, execute_view_bdd, execute_alter_procedure, execute_sql_file
+from lib import initialise_db, get_connection, insert_stats_population_fragment, insert_dep_file_fragment, execute_view_bdd, execute_alter_procedure, execute_sql_file
 from config import params
 from requete import insert_region
 
-connection = login_bdd("bddproject_db", "root", "root", "localhost", verbose=True)
+# Configurer la connection dans config.py
+connection = get_connection() 
 
 def restore_data(connection, params):
     initialise_db(connection, params, flag_reset_bdd=True)

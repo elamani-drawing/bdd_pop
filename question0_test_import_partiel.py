@@ -1,7 +1,8 @@
-from lib import initialise_db, login_bdd, insert_stats_population_fragment, insert_dep_file_fragment
+from lib import initialise_db, get_connection, insert_stats_population_fragment, insert_dep_file_fragment
 from config import params
 
-connection = login_bdd("bddproject_db", "root", "root", "localhost", verbose=True)
+# Configurer la connection dans config.py
+connection = get_connection() 
 initialise_db(connection, params, flag_reset_bdd=True)
 
 # Importe seulment les statistiques de populations des lignes de 5 à 20 premieres  

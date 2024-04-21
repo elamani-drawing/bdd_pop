@@ -3,7 +3,10 @@ import psycopg2.extras
 import pandas as pd
 import io 
 from requete import *
+from config import connexion
 
+def get_connection():
+    return login_bdd(connexion["dbname"],connexion["username"],connexion["password"],connexion["host"], connexion["port"])
 
 def login_bdd(dbname, username, password, host="localhost", port ="5432", verbose = True):
     """

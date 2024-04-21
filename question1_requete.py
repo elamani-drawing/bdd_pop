@@ -1,8 +1,10 @@
-from lib import initialise_db, login_bdd, insert_stats_population_fragment, insert_dep_file_fragment, format_tuples
+from lib import initialise_db, get_connection, insert_stats_population_fragment, insert_dep_file_fragment, format_tuples
 from config import params
 from requete import get_departments_in_region, get_communes_with_population_greater_than, get_most_populated_commune, get_least_populated_commune, get_most_populated_region, get_least_populated_region
 
-connection = login_bdd("bddproject_db", "root", "root", "localhost", verbose=True)
+
+# Configurer la connection dans config.py
+connection = get_connection() 
 
 
 def restore_data(connection, params):

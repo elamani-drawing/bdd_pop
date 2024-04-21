@@ -1,3 +1,11 @@
+connexion = {
+    "dbname" : "bddproject_db",
+    "username" : "root", 
+    "password" : "root", 
+    "host": "localhost",
+    "port" : "5432"
+}
+
 params = {
     "sql_requete" : {  
         "create_sql" : "./sql/create.sql", 
@@ -43,6 +51,7 @@ params = {
         "v_region_2023" : "./csv/cog/v_region_2023.csv",
     }
 }
+
 
 # Les types sont principalement utilisées pour le formmatage lors de l'affichage
 
