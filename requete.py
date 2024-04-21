@@ -199,3 +199,30 @@ def explain_get_communes_with_population_greater_than(connection, department_id,
     explanation = cursor.fetchall()
     cursor.close()
     return explanation
+
+
+def explain_primary_key_index_departement(connection, dep_id):
+    """
+    La requête pour vérifier l'indexation de la clé primaire avec Explain.
+    """
+    print("\n- Execution de la requete: "+ "EXPLAIN SELECT * FROM Departement WHERE dep = '"+str(dep_id)+"';")
+    cursor = connection.cursor()
+    cursor.execute("EXPLAIN SELECT * FROM Departement WHERE dep = %s;", (dep_id,))
+    explanation = cursor.fetchall()
+    cursor.close()
+    return explanation
+
+def explain_communes_with_less_than_population(connection, greater_than,make_index = False, code_stats_libelle="P20_POP"):
+    """
+    La requête pour lister les communes avec moins de 5000 habitants avec Explain.
+    Lorsque make_index est à False, la fonction créer un index avant dexecuter la requete
+    """
+    print("\n- Execution de la requete: "+ "EXPLAIN SELECT comm.com, comm.ncc FROM Commune comm, StatsPopulation sp WHERE sp.code_stats_libelle = '"+code_stats_libelle+"' AND sp.id_com = comm.com AND sp.valeur < "+greater_than+";")
+    cursor = connection.cursor()
+    if make_index:
+        print("- Ajout d'un index sur population avant l'execution de la requete.")
+        cursor.execute("CREATE INDEX idx_population ON StatsPopulation (valeur);")
+    cursor.execute("EXPLAIN SELECT comm.com, comm.ncc FROM Commune comm, StatsPopulation sp WHERE sp.code_stats_libelle = %s AND sp.id_com = comm.com AND sp.valeur < %s;", (code_stats_libelle, greater_than,))
+    explanation = cursor.fetchall()
+    cursor.close()
+    return explanation

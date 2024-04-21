@@ -42,7 +42,7 @@ print("""
     Seq Scan (Balayage séquentiel) : PostgreSQL a effectué un balayage séquentiel de la table Commune pour trouver les lignes correspondant au filtre id_dep = '34'.
     Index Scan (Balayage indexé) : Il a également utilisé un balayage indexé sur la table StatsPopulation en utilisant la clé primaire pour trouver les lignes correspondant aux conditions id_com = comm.com et code_stats_libelle = 'P20_POP'.
     Sort (Tri) : Avant de renvoyer les résultats, les données sont triées par comm.com et comm.ncc.
-    Unique (Unique) : Enfin, une opération d'élimination des doublons est effectuée pour ne renvoyer que des lignes uniques.
+    Unique (Unique) : Pour finirr, une opération d'élimination des doublons est effectuée pour ne renvoyer que des lignes uniques.
 """)
 
 
