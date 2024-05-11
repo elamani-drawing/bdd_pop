@@ -1,4 +1,4 @@
-Après concertation entre nous et avec la chargée de TD.
+Après concertation entre nous et avec la chargée de TD nous avons décidé de mettre à jour notre schéma.
 
 Region (reg, ncc); avec REG en clé.
 Departement (dep, ncc, id_reg); avec Dep en clé.
